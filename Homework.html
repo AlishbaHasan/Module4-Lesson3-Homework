@@ -5,13 +5,24 @@
     <body>
         <input type="number" id="inputid1">
         <button onclick="displaySQ()">Display Squared Numbers</button>
+        <p id="pid1"></p>
         <script>
             function displaySQ(){
                 var num = document.getElementById("inputid1").value;
                for(var i=1; i <=num; i= i+1){
-                document.write("Square of ",i,"is",i*i,"<br>")
+                document.getElementById("pid1").innerHTML+= "square of"+ i +"="+(i*i)+"<br>"
             } 
             }
+            var John ={
+                firstName: "John",
+                lastName: "Doe",
+                age: 50,
+                eyeColor: "blue"
+            }
+            document.write(John.firstName,"<br>")
+            document.write(John.lastName,"<br>")
+            document.write(John.age,"<br>")
+            document.write(John.eyeColor,"<br>")
         </script>
     </body>
 </html>
